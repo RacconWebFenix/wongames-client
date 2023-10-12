@@ -1,3 +1,4 @@
+'use client'
 import type { Metadata } from 'next'
 
 import StyledComponentsRegistry from '@/lib/registry'
