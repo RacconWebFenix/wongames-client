@@ -30,10 +30,10 @@ const wapperModifiers = {
 }
 
 export const Wrapper = styled.div<LogoProps>`
-  ${({ theme, color, size, hideOnMobile }) => css`
+  ${({ theme, color, size, $hideOnMobile }) => css`
     color: ${theme.colors[color!]};
 
     ${!!size && wapperModifiers[size]}
-    ${!!hideOnMobile && wapperModifiers.hideOnMobile}
+    ${!!$hideOnMobile && wapperModifiers.hideOnMobile}
   `}
 `
