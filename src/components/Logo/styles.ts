@@ -12,7 +12,7 @@ const wapperModifiers = {
     width: 20rem;
     height: 5.9rem;
   `,
-  hideonmobile: () => css`
+  hideOnMobile: () => css`
     ${media.lessThan('medium')`
         width: 5.8rem;
         height: 4.5rem;
@@ -30,10 +30,10 @@ const wapperModifiers = {
 }
 
 export const Wrapper = styled.div<LogoProps>`
-  ${({ theme, color, size, hideonmobile }) => css`
+  ${({ theme, color, size, hideOnMobile }) => css`
     color: ${theme.colors[color!]};
 
     ${!!size && wapperModifiers[size]}
-    ${!!hideonmobile && wapperModifiers.hideonmobile}
+    ${!!hideOnMobile && wapperModifiers.hideOnMobile}
   `}
 `
