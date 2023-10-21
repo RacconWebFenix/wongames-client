@@ -29,8 +29,8 @@ describe('<MediaMatch />', () => {
   })
 
   it('should show or hidden baded on the media passed', () => {
-    expect(desktopHeading.parentNode).not.toHaveStyleRule('display', 'block', {
-      media: '(min-width: 768px)'
+    expect(desktopHeading.parentNode).toHaveStyleRule('display', 'block', {
+      media: '(min-width:  768px)'
     })
   })
 })

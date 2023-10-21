@@ -41,6 +41,7 @@
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.4",
     "autoprefixer": "^10",
+    "babel-plugin-styled-components": "^2.1.4",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
     "eslint-config-prettier": "^9.0.0",
