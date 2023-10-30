@@ -32,5 +32,9 @@ describe('<MediaMatch />', () => {
     expect(desktopHeading.parentNode).toHaveStyleRule('display', 'block', {
       media: '(min-width:  768px)'
     })
+
+    expect(mobileHeading.parentNode).toHaveStyleRule('display', 'block', {
+      media: '(max-width:  768px)'
+    })
   })
 })
