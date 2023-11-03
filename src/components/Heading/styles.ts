@@ -22,7 +22,7 @@ const wrapperModifiers = {
     border-left: 0.7rem solid ${theme.colors[lineColor]};
   `,
   lineBottom: (theme: DefaultTheme, lineColor: LineColors) => css`
-    position: absolute;
+    position: relative;
     margin-bottom: ${theme.spacings.medium};
 
     &::after {
